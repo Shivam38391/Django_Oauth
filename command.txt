@@ -1,0 +1,68 @@
+
+
+
+
+curl -X POST -d "grant_type=convert_token&client_id=jHrP1TEYnwzBhXUH7yNHKdhnMVJT4Fip7lbNYkt4&backend=google-oauth2&token=v2UYrj2ady7k1bmOsRRys9la8XNeyg6voOGPkaaAu49khE9pykhLS0JKF9DyGsg80lK0PvH5BtFW5rRYb0CgoTbl6gsYQAYCChYw4dZweo7AQ9Xu6cZyFAf7u3kd78E8" http://127.0.0.1:8000/auth/convert-token
+
+
+ya29.a0AeXRPp4Z0CyPDDJNrHHmuOcfffKZIBT4xbDW0wyYwPJAQQqsXCVNpVZUQ80D3kmTSmghTTAvpEU2-pPFy7N9vTVDW33Wso0Z9mWgLICVgZZiT_NXX7UPo0hi_1SiiQmyDUKHTOvGOUsNSWXTUONGVsvgwwXjl4zrP3PRTbuTEyEaCgYKAS0SARESFQHGX2MinrS5PkvTU8yWAh9lQDl8vQ0178
+
+
+curl -X POST -d "grant_type=convert_token&client_id=DIlpcg5q7X6UncA5OXBQBA2dMCIoKzZkxNsKwuN8&backend=google-oauth2&token=ya29.a0AeXRPp4Z0CyPDDJNrHHmuOcfffKZIBT4xbDW0wyYwPJAQQqsXCVNpVZUQ80D3kmTSmghTTAvpEU2-pPFy7N9vTVDW33Wso0Z9mWgLICVgZZiT_NXX7UPo0hi_1SiiQmyDUKHTOvGOUsNSWXTUONGVsvgwwXjl4zrP3PRTbuTEyEaCgYKAS0SARESFQHGX2MinrS5PkvTU8yWAh9lQDl8vQ0178" http://127.0.0.1:8000//auth/convert-token
+
+
+
+{"access_token":"it4XAvOzBwlx5BA6RzLAAvOi4913VG","expires_in":36000,"token_type":"Bearer","scope":"read write","refresh_token":"WnVrDtINjrRkaVSSkbJ0hOohvK2mzc","user":{"email":"khushbooqwe68@gmail.com","first_name":"Khushboo","last_name":"Raina"}}
+
+
+ya29.a0AeXRPp5rTDJ-rNXRNjpVrbVNcmyUYa7WAWRFI1NAPW-erhj5c5R8WkAQS6f1p8__dO3E-HD433NE84AFK8-3UVYsGQ9t5iOvddS6jGgKrQgf2TIGlvHKuo1rEvcntVyQ_5Q9Nj3INU769HVqBChBpHOMTuj61m-uzyNBXXwdaCgYKAUISARASFQHGX2MiWGVUj25JoRF_qZfJafqOrw0175
+
+response :
+
+{"access_token":"HjqTzkafdmpIDZLL6fNNa4c5nsIspc","expires_in":36000,"token_type":"Bearer","scope":"read write","refresh_token":"0pmBWmElMlhpUgEnPnf9U4S0Ty5IPg","user":{"email":"shivamsharma120013@gmail.com","first_name":"ENIGMA","last_name":""}}
+
+{"access_token":"NtySjTMMV4NEx8xR6s9W4pJKY6o6GV","expires_in":36000,"token_type":"Bearer","scope":"read write","refresh_token":"LMSaB7vOCwtmGB6ya1bFBJ1lO62j7y","user":{"email":"shivamsharma38391@gmail.com","first_name":"shivam","last_name":"sharma"}}
+
+
+{
+    "sub": "104269759377954680499",
+    "name": "shivam sharma",
+    "given_name": "shivam",
+    "family_name": "sharma",
+    "picture": "https://lh3.googleusercontent.com/a/ACg8ocKV8udHHBqxVU-B00VCOaZJsPxGxxJ39Y9YyzPaWtsO0gsZTQ=s96-c",
+    "email": "shivamsharma38391@gmail.com",
+    "email_verified": true
+}
+
+
+"ya29.a0AeXRPp7G2dGpq8M3IzrGG3U1K4W7QmPHV69fQUJq7mT5ErK0p-QlODPS_Kvv3v6w24T8BQuENYCFMUxI6KGsepBmeeaSxdZ_J-IJuCeaZHvINri_n9iv5zccFhNcMgbB3V3pKBOnS-Bw70xwWOrBkWiRE04eCc2SoLhFloaAaCgYKAQkSARMSFQHGX2MiR50RmWwcoMqph3j85n49aA0175"
+
+
+{
+    "access_token": "ya29.a0AeXRPp7G2dGpq8M3IzrGG3U1K4W7QmPHV69fQUJq7mT5ErK0p-QlODPS_Kvv3v6w24T8BQuENYCFMUxI6KGsepBmeeaSxdZ_J-IJuCeaZHvINri_n9iv5zccFhNcMgbB3V3pKBOnS-Bw70xwWOrBkWiRE04eCc2SoLhFloaAaCgYKAQkSARMSFQHGX2MiR50RmWwcoMqph3j85n49aA0175",
+    "token_type": "Bearer",
+    "expires_in": 3599,
+    "scope": "email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid",
+    "authuser": "1",
+    "prompt": "none"
+}
+
+curl -X POST -d "grant_type=convert_token&client_id=<django-oauth-generated-client_id>&backend=google-identity&token=<google_openid_token>" http://uri:port/auth/convert-token
+
+
+
+
+
+curl -X POST -d "grant_type=convert_token&client_id=910427402581-01ovfg2t62eulalmo5plmghvhdpl67mf.apps.googleusercontent.com&backend=google-oauth2&token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjI1ZjgyMTE3MTM3ODhiNjE0NTQ3NGI1MDI5YjAxNDFiZDViM2RlOWMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI5MTA0Mjc0MDI1ODEtMDFvdmZnMnQ2MmV1bGFsbW81cGxtZ2h2aGRwbDY3bWYuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI5MTA0Mjc0MDI1ODEtMDFvdmZnMnQ2MmV1bGFsbW81cGxtZ2h2aGRwbDY3bWYuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDQyNjk3NTkzNzc5NTQ2ODA0OTkiLCJlbWFpbCI6InNoaXZhbXNoYXJtYTM4MzkxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYmYiOjE3NDA5MTM4MzMsIm5hbWUiOiJzaGl2YW0gc2hhcm1hIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0tWOHVkSEhCcXhWVS1CMDBWQ09hWkpzUHhHeHhKMzlZOVl5elBhV3RzTzBnc1pUUT1zOTYtYyIsImdpdmVuX25hbWUiOiJzaGl2YW0iLCJmYW1pbHlfbmFtZSI6InNoYXJtYSIsImlhdCI6MTc0MDkxNDEzMywiZXhwIjoxNzQwOTE3NzMzLCJqdGkiOiIxMjQwZmIwMjczOWU4M2U3NjBkZjMxMGI5MjdkMzYzNDViNWE1MmIxIn0.FIguEgAQMYeyJbAd6H0lGBtn0WgCQFXsaf9x6wqbLzDZvuAs0pc8FCsuM8x6yPzvG9qnR8TT-KBP2iQemfPTQqT69_3m3Vy0XdPCC2gXw--jvMiRSlmguhxGg4EjE105HubwyOSr0t9Isf7UJ-m-6XEHeIvtI-4Z6pdonom7avmZUonLzMf3beF4dWu0_vkz-v3agoq5XJZBywg2c5lIjepldpPkxQ3rqhjnb-wwlMDeDqXTiLMR3FMaN3t4pFoMLbHaomx58IigJMuOkD486TVN8iV400BLnMNbCnvx-1xPRvX0UCVd53d-gbx7-v1BN-ziU8U_5GH4sI4o3I560Q" http://127.0.0.1:8000//auth/convert-token  
+
+
+
+
+{
+    "credential": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjI1ZjgyMTE3MTM3ODhiNjE0NTQ3NGI1MDI5YjAxNDFiZDViM2RlOWMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI5MTA0Mjc0MDI1ODEtMDFvdmZnMnQ2MmV1bGFsbW81cGxtZ2h2aGRwbDY3bWYuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI5MTA0Mjc0MDI1ODEtMDFvdmZnMnQ2MmV1bGFsbW81cGxtZ2h2aGRwbDY3bWYuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDQyNjk3NTkzNzc5NTQ2ODA0OTkiLCJlbWFpbCI6InNoaXZhbXNoYXJtYTM4MzkxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYmYiOjE3NDA5MTM4MzMsIm5hbWUiOiJzaGl2YW0gc2hhcm1hIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0tWOHVkSEhCcXhWVS1CMDBWQ09hWkpzUHhHeHhKMzlZOVl5elBhV3RzTzBnc1pUUT1zOTYtYyIsImdpdmVuX25hbWUiOiJzaGl2YW0iLCJmYW1pbHlfbmFtZSI6InNoYXJtYSIsImlhdCI6MTc0MDkxNDEzMywiZXhwIjoxNzQwOTE3NzMzLCJqdGkiOiIxMjQwZmIwMjczOWU4M2U3NjBkZjMxMGI5MjdkMzYzNDViNWE1MmIxIn0.FIguEgAQMYeyJbAd6H0lGBtn0WgCQFXsaf9x6wqbLzDZvuAs0pc8FCsuM8x6yPzvG9qnR8TT-KBP2iQemfPTQqT69_3m3Vy0XdPCC2gXw--jvMiRSlmguhxGg4EjE105HubwyOSr0t9Isf7UJ-m-6XEHeIvtI-4Z6pdonom7avmZUonLzMf3beF4dWu0_vkz-v3agoq5XJZBywg2c5lIjepldpPkxQ3rqhjnb-wwlMDeDqXTiLMR3FMaN3t4pFoMLbHaomx58IigJMuOkD486TVN8iV400BLnMNbCnvx-1xPRvX0UCVd53d-gbx7-v1BN-ziU8U_5GH4sI4o3I560Q",
+    "clientId": "910427402581-01ovfg2t62eulalmo5plmghvhdpl67mf.apps.googleusercontent.com",
+    "select_by": "btn"
+}
+
+
+curl -X POST -d "grant_type=convert_token&client_id=jHrP1TEYnwzBhXUH7yNHKdhnMVJT4Fip7lbNYkt4&backend=google-oauth2&token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjI1ZjgyMTE3MTM3ODhiNjE0NTQ3NGI1MDI5YjAxNDFiZDViM2RlOWMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI5MTA0Mjc0MDI1ODEtMDFvdmZnMnQ2MmV1bGFsbW81cGxtZ2h2aGRwbDY3bWYuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI5MTA0Mjc0MDI1ODEtMDFvdmZnMnQ2MmV1bGFsbW81cGxtZ2h2aGRwbDY3bWYuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDQyNjk3NTkzNzc5NTQ2ODA0OTkiLCJlbWFpbCI6InNoaXZhbXNoYXJtYTM4MzkxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYmYiOjE3NDA5MTM4MzMsIm5hbWUiOiJzaGl2YW0gc2hhcm1hIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0tWOHVkSEhCcXhWVS1CMDBWQ09hWkpzUHhHeHhKMzlZOVl5elBhV3RzTzBnc1pUUT1zOTYtYyIsImdpdmVuX25hbWUiOiJzaGl2YW0iLCJmYW1pbHlfbmFtZSI6InNoYXJtYSIsImlhdCI6MTc0MDkxNDEzMywiZXhwIjoxNzQwOTE3NzMzLCJqdGkiOiIxMjQwZmIwMjczOWU4M2U3NjBkZjMxMGI5MjdkMzYzNDViNWE1MmIxIn0.FIguEgAQMYeyJbAd6H0lGBtn0WgCQFXsaf9x6wqbLzDZvuAs0pc8FCsuM8x6yPzvG9qnR8TT-KBP2iQemfPTQqT69_3m3Vy0XdPCC2gXw--jvMiRSlmguhxGg4EjE105HubwyOSr0t9Isf7UJ-m-6XEHeIvtI-4Z6pdonom7avmZUonLzMf3beF4dWu0_vkz-v3agoq5XJZBywg2c5lIjepldpPkxQ3rqhjnb-wwlMDeDqXTiLMR3FMaN3t4pFoMLbHaomx58IigJMuOkD486TVN8iV400BLnMNbCnvx-1xPRvX0UCVd53d-gbx7-v1BN-ziU8U_5GH4sI4o3I560Q" http://127.0.0.1:8000/auth/convert-token
