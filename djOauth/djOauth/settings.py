@@ -31,7 +31,8 @@ SECRET_KEY = 'django-insecure-96$_or9_*iutss$#n3!1sdr1g#n#pk-*m-c=m88t6k_8a7xs_*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["django-oauth.onrender.com" , "127.0.0.1:8000" , "*"]
+ALLOWED_HOSTS = ["django-oauth.onrender.com","https://django-oauth.onrender.com" , "127.0.0.1:8000" , "*"]
+
 
 
 # Application definition
