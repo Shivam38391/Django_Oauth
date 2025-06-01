@@ -45,7 +45,7 @@ CSRF_TRUSTED_ORIGINS = [
 
 INSTALLED_APPS = [
     
-    "jazzmin",
+    # "jazzmin",
     
     'django.contrib.admin',
     'django.contrib.auth',
@@ -63,7 +63,10 @@ INSTALLED_APPS = [
         "corsheaders",
 
     'drf_spectacular',
-    "accounts"
+    "accounts",
+    
+    #moketest app
+    "mocktest"
 ]
 
 MIDDLEWARE = [
@@ -111,12 +114,12 @@ WSGI_APPLICATION = 'djOauth.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 # PostgreSQL configuration using service and passfile
 
@@ -134,9 +137,9 @@ WSGI_APPLICATION = 'djOauth.wsgi.application'
 
 
 
-DATABASES = {
-    "default": dj_database_url.parse(os.environ.get("dj_Database_URL"))
-}
+# DATABASES = {
+#     "default": dj_database_url.parse(os.environ.get("dj_Database_URL"))
+# }
 
 
 # Password validation
