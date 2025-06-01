@@ -15,6 +15,7 @@ import os
 from dotenv import load_dotenv
 import dj_database_url
 
+
 from pathlib import Path
 
 load_dotenv()
@@ -31,9 +32,14 @@ SECRET_KEY = 'django-insecure-96$_or9_*iutss$#n3!1sdr1g#n#pk-*m-c=m88t6k_8a7xs_*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["django-oauth.onrender.com","https://django-oauth.onrender.com" , "127.0.0.1:8000" , "*"]
+ALLOWED_HOSTS = ["django-oauth.onrender.com" , '.onrender.com',"https://django-oauth.onrender.com" , "127.0.0.1:8000" , "*"]
 
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://*.onrender.com', # Allow all Render subdomains (HTTPS)
+    'https://django-oauth.onrender.com', # Your specific domain (HTTPS)
+    # If you have a custom domain, add it: 'https://yourcustomdomain.com'
+]
 
 # Application definition
 
