@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 import os
 from dotenv import load_dotenv
+import dj_database_url
 
 from pathlib import Path
 
@@ -30,7 +31,7 @@ SECRET_KEY = 'django-insecure-96$_or9_*iutss$#n3!1sdr1g#n#pk-*m-c=m88t6k_8a7xs_*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["django-oauth.onrender.com"]
+ALLOWED_HOSTS = ["django-oauth.onrender.com" , "127.0.0.1:8000" , "*"]
 
 
 # Application definition
@@ -103,11 +104,31 @@ WSGI_APPLICATION = 'djOauth.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
+# PostgreSQL configuration using service and passfile
+
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         # "OPTIONS": {
+#         #     "service": "my_service",
+#         #     "passfile": ".my_pgpass",
+#         # },
+        
+        
+#     }
+# }
+
+
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    "default": dj_database_url.parse(os.environ.get("dj_Database_URL"))
 }
 
 
