@@ -1,31 +1,33 @@
-from django.shortcuts import render
-
-# Create your views here.
-
-
 from rest_framework import viewsets
-from .models import Subject, Question, Option
-from .serializers import SubjectSerializer, QuestionSerializer, OptionSerializer
+from .models import MainCategory, Subject, Question, Option, TestResult
+from .serializers import (
+    MainCategorySerializer, 
+    SubjectSerializer, 
+    QuestionSerializer, 
+    OptionSerializer,
+    TestResultSerializer
+)
+
+class MainCategoryViewSet(viewsets.ReadOnlyModelViewSet):
+    queryset = MainCategory.objects.all()
+    serializer_class = MainCategorySerializer
 
 class SubjectViewSet(viewsets.ReadOnlyModelViewSet):
-    """
-    API endpoint that allows subjects to be viewed.
-    Each subject includes its nested questions and options.
-    """
     queryset = Subject.objects.all()
     serializer_class = SubjectSerializer
 
 class QuestionViewSet(viewsets.ReadOnlyModelViewSet):
-    """
-    API endpoint to view questions individually 
-    (with their respective options and a separate correct option field).
-    """
     queryset = Question.objects.all()
     serializer_class = QuestionSerializer
 
 class OptionViewSet(viewsets.ReadOnlyModelViewSet):
-    """
-    API endpoint to list all the options (if needed).
-    """
     queryset = Option.objects.all()
     serializer_class = OptionSerializer
+
+class TestResultViewSet(viewsets.ReadOnlyModelViewSet):
+    """
+    API endpoint that provides a list of test results along with the user rank
+    (computed relative to other scores for the same subject).
+    """
+    queryset = TestResult.objects.all().order_by('-score')
+    serializer_class = TestResultSerializer

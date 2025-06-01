@@ -64,7 +64,10 @@ class OptionInline(admin.TabularInline):
 # Admin for the Question model.
 class QuestionAdmin(admin.ModelAdmin):
     list_display = ['text', 'subject', 'positive_marks', 'negative_marks', 'correct_answer_display']
-    list_filter = ['subject']
+    # list_filter = ['subject',]
+    
+    list_filter = ['subject', 'subject__main_category']
+    search_fields = ['text', 'subject__name']
     inlines = [OptionInline]
 
     def correct_answer_display(self, obj):
