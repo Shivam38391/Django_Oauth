@@ -1,11 +1,12 @@
 from rest_framework import viewsets
-from .models import MainCategory, Subject, Question, Option, TestResult
+from .models import MainCategory, Subject, Question, Option, TestResult, UserAnswer
 from .serializers import (
     MainCategorySerializer, 
     SubjectSerializer, 
     QuestionSerializer, 
     OptionSerializer,
-    TestResultSerializer
+    TestResultSerializer,
+    UserAnswerSerializer
 )
 
 class MainCategoryViewSet(viewsets.ReadOnlyModelViewSet):
@@ -25,9 +26,12 @@ class OptionViewSet(viewsets.ReadOnlyModelViewSet):
     serializer_class = OptionSerializer
 
 class TestResultViewSet(viewsets.ReadOnlyModelViewSet):
-    """
-    API endpoint that provides a list of test results along with the user rank
-    (computed relative to other scores for the same subject).
-    """
     queryset = TestResult.objects.all().order_by('-score')
     serializer_class = TestResultSerializer
+
+class UserAnswerViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint to submit and retrieve user answers.
+    """
+    queryset = UserAnswer.objects.all()
+    serializer_class = UserAnswerSerializer

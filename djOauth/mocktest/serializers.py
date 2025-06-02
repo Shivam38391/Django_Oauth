@@ -1,6 +1,5 @@
 from rest_framework import serializers
-from .models import MainCategory, Subject, Question, Option, TestResult
-
+from .models import MainCategory, Subject, Question, Option, TestResult, UserAnswer
 class OptionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Option
@@ -55,3 +54,19 @@ class TestResultSerializer(serializers.ModelSerializer):
         """
         higher_count = TestResult.objects.filter(subject=obj.subject, score__gt=obj.score).count()
         return higher_count + 1
+
+
+
+
+
+
+
+
+# (Other serializers remain the same – OptionSerializer, QuestionSerializer, etc.)
+
+class UserAnswerSerializer(serializers.ModelSerializer):
+    # Expose the correctness of the answer
+    is_correct = serializers.ReadOnlyField()
+    class Meta:
+        model = UserAnswer
+        fields = ['id', 'test_result', 'question', 'selected_option', 'answered_at', 'is_correct']

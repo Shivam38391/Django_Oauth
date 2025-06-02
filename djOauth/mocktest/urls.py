@@ -5,7 +5,8 @@ from .views import (
     SubjectViewSet, 
     QuestionViewSet, 
     OptionViewSet,
-    TestResultViewSet
+    TestResultViewSet,
+    UserAnswerViewSet
 )
 
 router = DefaultRouter()
@@ -14,6 +15,7 @@ router.register(r'subjects', SubjectViewSet)
 router.register(r'questions', QuestionViewSet)
 router.register(r'options', OptionViewSet)
 router.register(r'results', TestResultViewSet)
+router.register(r'user-answers', UserAnswerViewSet)
 
 urlpatterns = [
     path('api/', include(router.urls)),
